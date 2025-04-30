@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="./Imagenes/Logos/logo informatorio.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="width:100%;
+    height:100%;
+     object-fit: cover;">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="encabezado">
+        <section class="presentacion" id="presentacion">
+            
         <nav class="navegacion">
+            <img class="enlaces__icono" 
+                     src="Imagenes/Logos/logo-informatorio-1.png" 
+                     alt="logo del informatorio"
+                     title="Informatorio">
             <a class="navegacion_enlace" href="#presentacion">
                 <h2 class="navegacion_titulo">informatorio</h2>
             </a>
@@ -29,7 +37,7 @@
             </ul>
 
         </nav>
-
+        </section>
     </header>
     <main class="principal">
         <section class="presentacion" id="sobre-mi">
@@ -44,17 +52,17 @@
                     </p>
                     <div class="presentacion__contenedor_botones">
                         <a href="#sobre-mi" class="boton" role="boton">Sobre mi</a>
-                        <a href="./Pdf documentos/Curriculum.pdf" target="_blank" class="boton boton_oscuro" role="button">Descargar CV</a>
+                        <a href="Pdf documentos/Curriculum.pdf" target="_blank" class="boton boton_oscuro" role="button">Descargar CV</a>
                     </div>
             </div>
         </section>
-        <section>
+        <section class="seccion_descripcion historia">
             <div class="seccion_descripcion">
                 <h2 class="seccion_descripcion__titulo">Algo de lo que pienso</h2>
               
                 <div class="seccion_descripcion__contenido">
                   <div class="seccion_descripcion__porta_retrato">
-                    <img class="seccion_descripcion__imagen" src="./Imagenes/Familia/foto familiar.jpg" alt="Foto" />
+                    <img class="seccion_descripcion__imagen" src="Imagenes/Familia/foto-familiar.jpg" alt="Foto" />
                   </div>
               
                   <div class="seccion_descripcion__texto">
@@ -62,20 +70,22 @@
                   </div>
                 </div>
               </div>
-              <div class="seccion_descripcion">
-                <h1 class="seccion_descripcion__titulo">Mi Historia</h1>
-              
+        </section>
+        <section class="seccion_descripcion__historia">
+              <div  class="seccion_descripcion">
+                <h1 class="seccion_descripcion__titulo">Mi Historia</h1>         
                 <div class="seccion_descripcion__contenido">
                   <div class="seccion_descripcion__texto">
                     <p> Creo mucho en los valores de mi conciencia, me considero una persona honesta y en general actúo considerando lo que está bien de acuerdo a lo que me dicta la conciencia. Por supuesto que los valores de lo que está bien para mi puede estar en las antípodas para otro, como el estar casado por segundas nupcias (para un católico viviría en pecado), nada cariñoso y reniego de los que lo son, no me gusta gastar en cosas que considero superfluas, considero a los animales como tales y no me gusta que los consideren parte de la familia, no me preocupo mucho por el cuidado del ambiente hasta cierto punto, despotrico contra casi todo y es casi seguro que cuestione cualquier afirmación de cualquier tema independientemente de que conozca o no del mismo; pero en general no le falto el saludo a nadie, casi siempre estoy predispuesto a ayudar y no le guardo rencor a nadie porque no considero a nadie, sino a mí mismo, responsable de mi destino.</p>
                   </div>
               
                   <div class="seccion_descripcion__porta_retrato">
-                    <img class="seccion_descripcion__imagen" src="./Imagenes/Familia/Angel y hermanos.jpg" alt="Foto" />
+                    <img class="seccion_descripcion__imagen" src="Imagenes/Familia/Angel-y-hermanos.jpg" alt="Foto" />
                   </div>
                 </div>
               </div>
-              <div class="seccion_descripcion">
+        </section>
+              <section class="hobbies">
                 <h1 class="seccion_descripcion__titulo">Mis Hobbies</h1>
               
                 <div class="seccion_descripcion__contenido">
@@ -84,12 +94,13 @@
                   </div>
               
                   <div class="seccion_descripcion__porta_retrato">
-                    <img class="seccion_descripcion__imagen" src="./Imagenes/Familia/casa arbol2.jpg" alt="Foto" />
+                    <img class="seccion_descripcion__imagen" src="Imagenes/Familia/casa-arbol2.jpg" alt="Foto" />
                   </div>
                 </div>
               </div>
             
              </div>
+              </section>
      <section class="proyectos">
       <h1 class="proyectos__titulo">MIS PROYECTOS</h1>
      </section>
@@ -97,13 +108,13 @@
              </article>
              <article class="articulo proyectos" id="proyectos">
              <div class="contenedor_tarjeta_grid">
-                <img class="tarjeta__imagen" src="./Imagenes/Araza/Riacho Araza 1.jpg" 
+                <img class="tarjeta__imagen" src="Imagenes/Araza/Riacho-Araza-1.jpg" 
                 alt="Imagen del Riacho Araza"
                 title="proyecto 1 ">
              </div>
              <div
              class="presentacion__contenedor_botones">
-                <a href="./Pdf documentos/Limpieza Araza MD.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto1</a>
+                <a href="Pdf documentos/Limpieza-Araza-MD.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto1</a>
              </div>
                 <div class="tarjeta__contenido">
                     <h3 class="tarjeta__titulo"
@@ -119,15 +130,15 @@
              </article>
              <article class="articulo proyectos" id="proyectos">
              <div class="contenedor_tarjeta_grid">
-                <img class="tarjeta__imagen" src="./Imagenes/Cos de Agua/Cosecha de agua 1.jpg" 
+                <img class="tarjeta__imagen" src="Imagenes/Cos-Agua/Cosecha-agua-1.jpg" 
                 alt="Imagen Cosecha de agua 1">                               
-                <img class="tarjeta__imagen" src="./Imagenes/Cos de Agua/Cosecha de agua 2.jpg" 
+                <img class="tarjeta__imagen" src="Imagenes/Cos-Agua/Cosecha-agua-2.jpg" 
                 alt="Imagen Cosecha de agua 2"
                 title="proyecto 2 ">
              </div>
              <div
              class="presentacion__contenedor_botones">
-                <a href="./Pdf documentos/Cosecha de agua MD.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto2</a>
+                <a href="Pdf documentos/Cosecha-de-agua-md.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto2</a>
              </div>
                 <div class="tarjeta__contenido">
                     <h3 class="tarjeta__titulo"
@@ -143,14 +154,14 @@
              </article>    
              <article class="articulo proyectos" id="proyectos">
              <div class="contenedor_tarjeta_grid">
-                <img class="tarjeta__imagen" src="./Imagenes/Lag Negra/Lag Negra 1.JPG" 
+                <img class="tarjeta__imagen" src="Imagenes/Lag-Negra/Lag-Negra-1.JPG" 
                 alt="Imagen Lag Negra 1">
-                <img style="height: 300px; width: 500;" src="./Imagenes/Lag Negra/Lag Negra 2.JPG" alt="Imagen Lag Negra 2"
+                <img style="height: 200px; width: 50%;" src="Imagenes/Lag-Negra/Lag-Negra-2.JPG" alt="Imagen Lag Negra 2"
                 title="proyecto 3">
              </div>
              <div
              class="presentacion__contenedor_botones">
-                <a href="./Pdf documentos/Proy Sanea Lag Negra.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto3</a>
+                <a href="Pdf documentos/Proy-Sanea-Lag-Negra.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto3</a>
              </div>
                 <div class="tarjeta__contenido">
                     <h3 class="tarjeta__titulo"
@@ -168,13 +179,13 @@
             </article>
             <article class="articulo proyectos" id="proyectos">
             <div class="contenedor_tarjeta_grid">
-               <img class="tarjeta__imagen" src="./Imagenes/R Negro/Imagen   santa clara ruta 11.jpg" 
+               <img class="tarjeta__imagen" src="Imagenes/R-Negro/santa-clara-ruta-11.jpg" 
                alt="Imagen del Rio Negro"
                title="proyecto 4 ">
             </div>
             <div
             class="presentacion__contenedor_botones">
-               <a href="./Pdf documentos/R Negro R11-Jaula de monos - 2012.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto4</a>
+               <a href="Pdf documentos/R-Negro-R11-Jaula-de-monos-2012.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto4</a>
             </div>
                <div class="tarjeta__contenido">
                    <h3 class="tarjeta__titulo"
@@ -192,15 +203,15 @@
             </article>
             <article class="articulo proyectos" id="proyectos">
             <div class="contenedor_tarjeta_grid">
-               <img class="tarjeta__imagen" src="./Imagenes/Dragado Riacho en YPF/Drag muelle ypf 1.jpg" 
+               <img class="tarjeta__imagen" src="Imagenes/Dragado-YPF/Drag-muelle-ypf-1.jpg" 
                alt="Imagen Dragado Muelle YPF 1">                               
-               <img class="tarjeta__imagen" src="./Imagenes/Dragado Riacho en YPF/Drag muelle YPF 2.jpg" 
+               <img class="tarjeta__imagen" src="Imagenes/Dragado-YPF/Drag-muelle-YPF-2.jpg" 
                alt="Imagen Dragado muelle YPF 2"
                title="proyecto 5 ">
             </div>
             <div
             class="presentacion__contenedor_botones">
-               <a href="./Pdf documentos/PROYECTO dragado muelle YPF.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto5</a>
+               <a href="Pdf documentos/PROYECTO-dragado-muelle-YPF.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto5</a>
             </div>
                <div class="tarjeta__contenido">
                    <h3 class="tarjeta__titulo"
@@ -217,15 +228,15 @@
             </article>    
             <article class="articulo proyectos" id="proyectos">
             <div class="contenedor_tarjeta_grid">
-               <img class="tarjeta__imagen" src="./Imagenes/Araza/Fontana/imagen tramo I.jpg" 
+               <img class="tarjeta__imagen" src="Imagenes/Araza/Fontana/imagen-tramo-I.jpg" style="height: 300px; width: 300px;"
                alt="Imagen araza Fontana 1">
-               <img src="./Imagenes/Araza/Fontana/imagen tramo II.jpg"
+               <img src="Imagenes/Araza/Fontana/imagen-tramo-II.jpg" style="height: 300px; width: 300px;"
                 alt="Imagen Arazá Fontana 2 "
                title="proyecto 6">
             </div>
             <div
             class="presentacion__contenedor_botones">
-               <a href="./Pdf documentos/MEM.DESCRIP Araza sur fontana.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto6</a>
+               <a href="Pdf documentos/MD-Araza-sur-fontana.pdf" target="_blank" class="boton boton_oscuro" role="button">Proyecto6</a>
             </div>
                <div class="tarjeta__contenido">
                    <h3 class="tarjeta__titulo"
@@ -262,10 +273,10 @@
                     <br>
                     <a 
                     class="enlaces__enlaces enlaces__enlaces_footer"
-                    href="https://www.google.com/maps/@-27.4286018,-58.9550237,15z?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                    href="https://gobiernodigital.chaco.gob.ar/login"
                     target="_blank">
                      <img class="enlaces__icono" 
-                     src="./Imagenes/Logos/logo informatorio 1.png" 
+                     src="Imagenes/Logos/logo-informatorio-1.png" 
                      alt="logo del informatorio"
                      title="Informatorio">
                      </a>

@@ -68,14 +68,16 @@ body {
    .presentacion {
     width: 100%;
     height: 100%;
-    background-image:url("./Imagenes/Familia/fondo\ pres.JPG");
-    background-repeat: no-repeat;
-    background-size: 100% auto; /* para que se ajuste al tamaño del div */
-    background-position: center;
-  }
+    background-image:url("../Imagenes/Familia/fondo-pres.JPG");
+    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+    background-size: cover; /* Hace que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    margin-left: 5%; /* Añade margen izquierdo */
+    margin-right: 5%; /* Añade margen derecho */
+    }
   .presentacion__contenedor_info {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     padding: 10%;
     display: flex;
     flex-direction: column;
@@ -104,8 +106,10 @@ body {
   max-width: 800px;
   font-size: var(--presentacion-descripcion-tamanio);
   color: var(--texto-secundario);
-  text-wrap: pretty;
-}
+  text-wrap: pretty; 
+  }
+  
+
  /* articulo */
 .articulo {
   width: 100%;
@@ -116,7 +120,17 @@ body {
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+  background-color: #f4f4f4; /* Un color claro como fondo */
+  padding: 80px 0;
+  color: #333; /* Color del texto */
 }
+.sobre-mi {
+  background-color: #f4f4f4; /* Un color claro como fondo */
+  padding: 80px 0;
+  color: #333; /* Color del texto */
+  text-align: center;
+}
+
 .sobre_mi {
   background: linear-gradient(
     100deg,
@@ -125,6 +139,14 @@ body {
     var(--color-primario-apagado) 10%,
     var(--color-secundario) 90%);
 }
+.historia {
+  background-color: #d8bfd8; /* Un color lila clarito, por ejemplo */
+}
+
+.hobbies {
+  background-color: #e6e6fa; /* Otro color similar o distinto */
+}
+
 .proyectos {
   background: linear-gradient(
   100deg,
@@ -157,12 +179,56 @@ body {
 }
 /* seccion descripcion */
 .seccion_descripcion {
-  padding: 20px;
+  background-color: #f0f0f0; /* Color de fondo */
+  padding: 40px 0; /* Agregar espacio arriba y abajo */
+  color: black; /* Color del texto */
+}
+section .seccion_descripcion {
+  background-color: #f0f0f0; /* Color de fondo */
+  padding: 40px 0; /* Espaciado */
+  color: black; /* Color del texto */
+  margin: 0 10px; /* Añadir un poco de margen a la izquierda y derecha */
+}
+
+/* Asegúrate de que la imagen de fondo no esté sobrescribiendo */
+.seccion_descripcion__texto {
+  background-color: transparent; /* Asegúrate de que el texto no tenga un fondo opaco */
+}
+
+
+/* Para la sección 'Algo de lo que pienso' */
+.seccion_descripcion:nth-of-type(1) {
+  background-color: #f0f0f0; /* Color de fondo claro */
+  padding: 40px 0;
+  color: black; /* Color de texto */
+}
+
+/* Para la sección 'Mi Historia' */
+.seccion_descripcion:nth-of-type(2) {
+  background-color: #e0e0e0; /* Un color ligeramente diferente */
+  padding: 40px 0;
+  color: black;
+}
+
+/* Para la sección 'Mis Hobbies' */
+.seccion_descripcion:nth-of-type(3) {
+  background-color: #d0d0d0; /* Otro color */
+  padding: 40px 0;
+  color: black;
+}
+
+
+
+
+.seccion_descripcion {
   max-width: 900px;
   margin: 0 auto;
-  background-color: #f5f5f5;
+  background-color: #aa9cc5;
   background-image: linear-gradient(to right top, #f5f5f5, #ffffff);
+  padding: 40px 0; /* Agregar espacio arriba y abajo */
+  color: black; /* Color del texto */
 }
+
 
 .seccion_descripcion__titulo {
   text-align: center;
@@ -175,6 +241,8 @@ body {
   gap: 2rem;
   align-items: flex-start;
   flex-wrap: wrap;
+  background-color: #aa9cc5;
+  background-image: linear-gradient(to right top, #f5f5f5, #ffffff);
 }
 
 .seccion_descripcion__porta_retrato {
@@ -213,7 +281,6 @@ body {
   max-height: 300px;
   align-items: flex-start;
   overflow-y: auto;
-  overflow-x: hidden;
   padding: 20px;
 }
 .seccion_descripcion__titulo {
@@ -292,7 +359,7 @@ body {
   text-decoration: none;
 }
 .enlaces__enlace_footer {
-  font-size: var(--enlaces-tamanio-pequenio: 0.9rem);
+  font-size: var(--enlaces-tamanio-pequenio);
   font-weight: var(--texto-peso-fino);
 }
 .enlaces__icono {
